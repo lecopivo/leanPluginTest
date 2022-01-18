@@ -24,7 +24,7 @@ int main() {
     
     auto package_main = (int (*)(int, char **))dlsym(handle, "main");
     
-    if (!lean_initialize_runtime_module || !initialize_Package || !_lean_main || !main) {
+    if (!lean_initialize_runtime_module || !initialize_Package || !_lean_main) {
       std::cout << "Error Message:" << std::endl << dlerror() << std::endl;
       return 0;
     }

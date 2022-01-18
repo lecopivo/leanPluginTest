@@ -6,6 +6,12 @@ cd build; mkdir debug; cd debug
 cmake ../..
 make -j
 ./main
+./main2
+#+end_src
+
+Quick rebuild command from =build/debug= directory
+#+begin_src
+pushd ../../; lake build; popd; make -j
 #+end_src
 
 Potentially set up =LD_LIBRARY_PATH= to have =libleanshared.so= available

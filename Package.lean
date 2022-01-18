@@ -1,3 +1,3 @@
 
 def main : IO Unit :=
-  IO.println "Hello from Package!"
+  IO.println s!"Hello from Package!"
