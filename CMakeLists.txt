@@ -15,5 +15,5 @@ add_library(plugin2 SHARED plugin2.cpp)
 target_include_directories(plugin2 PUBLIC "~/.elan/toolchains/leanprover--lean4---nightly/include")
 
 target_link_directories(plugin2 PUBLIC "~/.elan/toolchains/leanprover--lean4---nightly/lib/lean")
-target_link_libraries(plugin2 leanshare)
+target_link_libraries(plugin2 leanshared)
 
